@@ -1,0 +1,55 @@
+
+
+header div {
+    background-color: #37BBD2;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+
+header div div {
+    display: inline-block;
+}
+
+#premier-bloc {
+    background-color: #F5F5F5;
+}
+
+.moitie {
+    width: 48%;
+}
+
+.blanc {
+    color: white;
+}
+
+.droite {
+    float: right;
+}
+
+
+
+.divimage {
+    text-align: center;
+}
+
+.carre {
+    border: 2px solid black;
+    
+}
+
+
+.rectangle {
+    border: 2px solid black;
+}
+
+.image {
+    width: 25%;
+    margin: 20%;
+}
+
+.navi {
+    background-color: #F5F5F5;
+}
