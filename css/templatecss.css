@@ -1,29 +1,20 @@
 
+/******
+* Header
+* bandeau simple au dessus
+*******/
 
+
+header {
+    color: white;
+    font-size: 20px;
+}
 header div {
     background-color: #37BBD2;
     padding: 15px;
-    color: white;
-    font-size: 20px;
-    vertical-align: middle;
+    line-height: 120px;
 }
 
-
-header div div {
-    display: inline-block;
-}
-
-#premier-bloc {
-    background-color: #F5F5F5;
-}
-
-.moitie {
-    width: 48%;
-}
-
-.blanc {
-    color: white;
-}
 
 .droite {
     float: right;
@@ -31,14 +22,23 @@ header div div {
 
 
 
+/******
+* Main
+* toutes les cases dont les tailles s'ajustent en fonction des dimensions 
+* de la page internet
+*******/
+
+
+.bordure {
+    border: 3px solid #363635;
+}
+
 .divimage {
     position: relative;
-    display: flex;
-    align-items: center;
-    align-content: center;
     padding-bottom: 20px;
     margin: 0px;
-    border: 3px solid black;
+    display: flex;
+    align-items: center;
 }
 
 .grand {
@@ -48,26 +48,170 @@ header div div {
 .petit {
     height: 250px;
 }
+
+.image {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
   
 .lien {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    width: 100%;
+    right: 0px;
     height: 60px;
-    margin: 3px;
-}  
-
-.image {
-    /*width: 50%;*/
+    margin: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    line-height: 60px;
+    -webkit-transition: all .8s ease-in;
+    -moz-transition: all .8s ease-in;
+    -o-transition: all .8s ease-in;
+    transition: all .8s ease-in;
 }
 
-/*.navi {
+.lien:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#premier-bloc {
     background-color: #F5F5F5;
-}*/
-
-
-.col-sm-4, .col-md-4 {
-    padding-right: 0px;
-    padding-left: 0px;
 }
+
+#premier-lien {
+    background-color: #999999;
+}
+
+#premier-lien:hover {
+    background-color: #1C1C1C;
+}
+
+#deuxieme-bloc {
+    background-color: #FA8A7E;
+}
+
+#deuxieme-lien {
+    background-color: #F8504D;
+}
+
+#deuxieme-lien:hover {
+    background-color: #F63431;
+}
+
+#troisieme-bloc {
+    background-color: #B382FF;
+}
+
+#troisieme-lien {
+    background-color: #7F53C6;
+}
+
+#troisieme-lien:hover {
+    background-color: #6E36C7;
+}
+
+#quatrieme-bloc {
+    background-color: #B7F6C9;
+}
+
+#quatrieme-lien {
+    background-color: #35EAB5;
+    color: black;
+}
+
+#quatrieme-lien:hover {
+    background-color: #31D0A0;
+    color: black;
+}
+
+#cinquieme-bloc {
+    background-color: #FBFF86;
+}
+
+#cinquieme-lien {
+    background-color: #FBED18;
+    color: black;
+}
+
+#cinquieme-lien:hover {
+    background-color: #E4D612;
+    color: black;
+}
+
+#sixieme-bloc {
+    background-color: #FA8A7E;
+}
+
+#sixieme-lien {
+    background-color: #F8504D;
+}
+
+#sixieme-lien:hover {
+    background-color: #F63431;
+}
+
+#septieme-bloc {
+    background-color: #7EFEFF;
+}
+
+#septieme-lien {
+    background-color: #3BA8FB;
+}
+
+#septieme-lien:hover {
+    background-color: #1A89DE;
+}
+
+#huitieme-bloc {
+    background-color: #B7F6C9;
+}
+
+#huitieme-lien {
+    background-color: #35EAB5;
+    color: black;
+}
+
+#huitieme-lien:hover {
+    background-color: #31D0A0;
+    color: black;
+}
+
+#neuvieme-bloc {
+    background-color: #B382FF;
+}
+
+#neuvieme-lien {
+    background-color: #7F53C6;
+}
+
+#neuvieme-lien:hover {
+    background-color: #6E36C7;
+}
+
+#dixieme-bloc {
+    background-color: #7EFEFF;
+}
+
+#dixieme-lien {
+    background-color: #3BA8FB;
+}
+
+#dixieme-lien:hover {
+    background-color: #1A89DE;
+}
+
+#onzieme-bloc {
+    background-color: #F5F5F5;
+}
+
+#onzieme-lien {
+    background-color: #999999;
+}
+
+#onzieme-lien:hover {
+    background-color: #1C1C1C;
+}
+
