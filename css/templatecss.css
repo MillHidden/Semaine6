@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'distant_strokeregular';
+    src: url('../police/distant_stroke-webfont.eot');
+    src: url('../police/distant_stroke-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../police/distant_stroke-webfont.woff2') format('woff2'),
+         url('../police/distant_stroke-webfont.woff') format('woff'),
+         url('../police/distant_stroke-webfont.ttf') format('truetype'),
+         url('../police/distant_stroke-webfont.svg#distant_strokeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /******
 * Header
@@ -8,6 +20,7 @@
 header {
     color: white;
     font-size: 20px;
+    font-family: Arial;
 }
 header div {
     background-color: #37BBD2;
@@ -19,8 +32,6 @@ header div {
 .droite {
     float: right;
 }
-
-
 
 /******
 * Main
@@ -35,24 +46,91 @@ header div {
 
 .divimage {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
     margin: 0px;
     display: flex;
     align-items: center;
 }
 
-.grand {
-    height: 500px;
-}
 
 .petit {
-    height: 250px;
+       height: 120px;
+}
+ 
+.grand {
+       height: 240px;
 }
 
 .image {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: all 1.2s ease-in;
+    -moz-transition: all 1.2s ease-in;
+    -o-transition: all 1.2s ease-in;
+    transition: all 1.2s ease-in;
+    border-radius: 25px;
+    height: 40px;
+}
+
+.petit .image {
+    height:40px;
+}
+
+.grand .image {
+    height:80px;
+}
+
+ 
+@media (min-width: 768px) {
+    .petit {
+        height:100px;
+    }
+    .grand {
+        height: 200px
+    }
+    .grand .image {
+        height:100px;
+    }
+    .petit .image {
+        height: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+   .petit {
+       height: 250px;
+   }
+   .grand {
+       height: 250px;
+   }
+   .petit .image {
+       height: 100px;
+   }
+   .image:hover {
+        height: 120px;
+    }
+}
+ 
+@media (min-width: 1200px) {
+    .petit .image {
+        height:120px;
+    }
+    
+    .grand .image {
+        height:160px;
+    }
+    
+    .image:hover {
+        height: 150px;
+    }
+    
+    .petit {
+        height: 290px;
+    }
+    .grand {
+        height: 580px
+  }
 }
   
 .lien {
@@ -66,15 +144,17 @@ header div {
     padding-left: 20px;
     color: white;
     line-height: 60px;
-    -webkit-transition: all .8s ease-in;
-    -moz-transition: all .8s ease-in;
-    -o-transition: all .8s ease-in;
-    transition: all .8s ease-in;
+    -webkit-transition: all 1.2s ease-in;
+    -moz-transition: all 1.2s ease-in;
+    -o-transition: all 1.2s ease-in;
+    transition: all 1.2s ease-in;
 }
 
 .lien:hover {
     color: white;
     text-decoration: none;
+    font-family: 'distant_strokeregular', Arial, serif;
+    font-size: 2em;
 }
 
 #premier-bloc {
@@ -214,4 +294,5 @@ header div {
 #onzieme-lien:hover {
     background-color: #1C1C1C;
 }
+
 

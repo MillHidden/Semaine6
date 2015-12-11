@@ -1,0 +1,45 @@
+body {
+	background-image: url("Fond-id.jpg");
+	background-repeat : no-repeat;
+	background-attachment: fixed;
+}
+
+@font-face {
+    font-family: 'distant_strokeregular';
+    src: url('distant_stroke-webfont.eot');
+    src: url('distant_stroke-webfont.eot?#iefix') format('embedded-opentype'),
+         url('distant_stroke-webfont.woff2') format('woff2'),
+         url('distant_stroke-webfont.woff') format('woff'),
+         url('distant_stroke-webfont.ttf') format('truetype'),
+         url('distant_stroke-webfont.svg#distant_strokeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#image {
+	float: left;
+	padding: 25px;
+}
+
+header h1 {
+	font-family: 'distant_strokeregular', Arial, serif;
+	color: blue;
+	text-align: center;
+	font-size: 5em;
+}
+
+h2 {
+	font-family: 'distant_strokeregular', Arial, serif;
+	color: blue;
+	font-size: 2em;
+}
+
+#exp {
+	border: 2px solid pink;
+	border-radius: 25px;
+}
+
+#form{
+	box-shadow: 1px 2px 3px red;
+}
