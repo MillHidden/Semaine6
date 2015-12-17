@@ -20,19 +20,32 @@
 *******/
 
 header {
-    line-height: 120px;
-    padding: 15px;
-    
-    background-color: #37BBD2;
+    padding-left: 15px;
+    padding-right: 15px;
     
     color: white;
     font-size: 20px;
     font-family: Arial;
+    text-align: left;
 }
 
 main {}
 
 footer {}
+
+/****** 
+* Module header
+*******/
+
+header p {
+    vertical-align: middle;
+}
+
+/* image */
+
+.img-style {
+    border-radius: 50%;
+}
 
 /****** 
 * Module main
@@ -48,7 +61,6 @@ footer {}
 
 .block {
     position: relative;
-    /*padding-bottom: 60px;*/
     
     border: 3px solid #363635;
 }
@@ -60,44 +72,43 @@ footer {}
     }
 
         .block__image-style {
-            border-radius: 25px;
             vertical-align: middle;
         }
 
 /* structure de la partie du block qui contient le lien */
 
-.block__lien {
-    position: absolute;
-    bottom: 0;
-    left: 0px;
-    right: 0px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-
-    .elem-1 {
-        float: left;
+    .block__lien {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        right: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     
-    .elem-2{
-        float: right;
-    }
     
-    .elem-1, .elem-2 {
-        vertical-align: middle;
-    }
-    
-    .block__lien:hover {
-        background: rgba(0,0,0,.4);
-    }
-
-        .block__lien:hover .elem-1 {
-            color: white;
-            text-decoration: none;
-            font-family: 'distant_strokeregular', Arial, serif;
-            font-size: 2em;   
+        .elem-1 {
+            float: left;
         }
+        
+        .elem-2{
+            float: right;
+        }
+        
+        .elem-1, .elem-2 {
+            vertical-align: middle;
+        }
+        
+        .block__lien:hover {
+            background: rgba(0,0,0,.4);
+        }
+    
+            .block__lien:hover .elem-1 {
+                color: white;
+                text-decoration: none;
+                font-family: 'distant_strokeregular', Arial, serif;
+                font-size: 1.7em;   
+            }
 
 /****** 
 * effet css de transition
