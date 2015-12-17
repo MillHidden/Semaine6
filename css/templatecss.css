@@ -1,3 +1,7 @@
+/****** 
+* Styles de base
+*******/
+
 @font-face {
     font-family: 'distant_strokeregular';
     src: url('../police/distant_stroke-webfont.eot');
@@ -11,288 +15,97 @@
 }
 
 
-/******
-* Header
-* bandeau simple au dessus
+/****** 
+* Layout
 *******/
 
-
 header {
+    line-height: 120px;
+    padding: 15px;
+    
+    background-color: #37BBD2;
+    
     color: white;
     font-size: 20px;
     font-family: Arial;
 }
-header div {
-    background-color: #37BBD2;
-    padding: 15px;
-    line-height: 120px;
-}
 
+main {}
 
-.droite {
-    float: right;
-}
+footer {}
 
-/******
-* Main
-* toutes les cases dont les tailles s'ajustent en fonction des dimensions 
-* de la page internet
+/****** 
+* Module main
 *******/
 
 
-.bordure {
+/* bloc principal */
+.container-style {
     border: 3px solid #363635;
 }
 
-.divimage {
+/* structure commune d'un block */
+
+.block {
     position: relative;
-    padding-bottom: 60px;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-}
-
-
-.petit {
-       height: 120px;
-}
- 
-.grand {
-       height: 240px;
-}
-
-.image {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-transition: all 1.2s ease-in;
-    -moz-transition: all 1.2s ease-in;
-    -o-transition: all 1.2s ease-in;
-    transition: all 1.2s ease-in;
-    border-radius: 25px;
-    height: 40px;
-}
-
-.petit .image {
-    height:40px;
-}
-
-.grand .image {
-    height:80px;
-}
-
- 
-@media (min-width: 768px) {
-    .petit {
-        height:100px;
-    }
-    .grand {
-        height: 200px
-    }
-    .grand .image {
-        height:100px;
-    }
-    .petit .image {
-        height: 30px;
-    }
-}
-
-@media (min-width: 992px) {
-   .petit {
-       height: 250px;
-   }
-   .grand {
-       height: 250px;
-   }
-   .petit .image {
-       height: 100px;
-   }
-   .image:hover {
-        height: 120px;
-    }
-}
- 
-@media (min-width: 1200px) {
-    .petit .image {
-        height:120px;
-    }
+    /*padding-bottom: 60px;*/
     
-    .grand .image {
-        height:160px;
-    }
-    
-    .image:hover {
-        height: 150px;
-    }
-    
-    .petit {
-        height: 290px;
-    }
-    .grand {
-        height: 580px
-  }
+    border: 3px solid #363635;
 }
-  
-.lien {
+
+/* structure de l'image */
+
+    .block__image {
+        text-align: center;
+    }
+
+        .block__image-style {
+            border-radius: 25px;
+            vertical-align: middle;
+        }
+
+/* structure de la partie du block qui contient le lien */
+
+.block__lien {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 0px;
     right: 0px;
-    height: 60px;
-    margin: 0px;
     padding-right: 20px;
     padding-left: 20px;
-    color: white;
-    line-height: 60px;
+}
+
+
+    .elem-1 {
+        float: left;
+    }
+    
+    .elem-2{
+        float: right;
+    }
+    
+    .elem-1, .elem-2 {
+        vertical-align: middle;
+    }
+    
+    .block__lien:hover {
+        background: rgba(0,0,0,.4);
+    }
+
+        .block__lien:hover .elem-1 {
+            color: white;
+            text-decoration: none;
+            font-family: 'distant_strokeregular', Arial, serif;
+            font-size: 2em;   
+        }
+
+/****** 
+* effet css de transition
+******/
+
+.block__image-style, .block__lien, .elem-1{
     -webkit-transition: all 1.2s ease-in;
     -moz-transition: all 1.2s ease-in;
     -o-transition: all 1.2s ease-in;
     transition: all 1.2s ease-in;
 }
-
-.lien:hover {
-    color: white;
-    text-decoration: none;
-    font-family: 'distant_strokeregular', Arial, serif;
-    font-size: 2em;
-}
-
-#premier-bloc {
-    background-color: #F5F5F5;
-}
-
-#premier-lien {
-    background-color: #999999;
-}
-
-#premier-lien:hover {
-    background-color: #1C1C1C;
-}
-
-#deuxieme-bloc {
-    background-color: #FA8A7E;
-}
-
-#deuxieme-lien {
-    background-color: #F8504D;
-}
-
-#deuxieme-lien:hover {
-    background-color: #F63431;
-}
-
-#troisieme-bloc {
-    background-color: #B382FF;
-}
-
-#troisieme-lien {
-    background-color: #7F53C6;
-}
-
-#troisieme-lien:hover {
-    background-color: #6E36C7;
-}
-
-#quatrieme-bloc {
-    background-color: #B7F6C9;
-}
-
-#quatrieme-lien {
-    background-color: #35EAB5;
-    color: black;
-}
-
-#quatrieme-lien:hover {
-    background-color: #31D0A0;
-    color: black;
-}
-
-#cinquieme-bloc {
-    background-color: #FBFF86;
-}
-
-#cinquieme-lien {
-    background-color: #FBED18;
-    color: black;
-}
-
-#cinquieme-lien:hover {
-    background-color: #E4D612;
-    color: black;
-}
-
-#sixieme-bloc {
-    background-color: #FA8A7E;
-}
-
-#sixieme-lien {
-    background-color: #F8504D;
-}
-
-#sixieme-lien:hover {
-    background-color: #F63431;
-}
-
-#septieme-bloc {
-    background-color: #7EFEFF;
-}
-
-#septieme-lien {
-    background-color: #3BA8FB;
-}
-
-#septieme-lien:hover {
-    background-color: #1A89DE;
-}
-
-#huitieme-bloc {
-    background-color: #B7F6C9;
-}
-
-#huitieme-lien {
-    background-color: #35EAB5;
-    color: black;
-}
-
-#huitieme-lien:hover {
-    background-color: #31D0A0;
-    color: black;
-}
-
-#neuvieme-bloc {
-    background-color: #B382FF;
-}
-
-#neuvieme-lien {
-    background-color: #7F53C6;
-}
-
-#neuvieme-lien:hover {
-    background-color: #6E36C7;
-}
-
-#dixieme-bloc {
-    background-color: #7EFEFF;
-}
-
-#dixieme-lien {
-    background-color: #3BA8FB;
-}
-
-#dixieme-lien:hover {
-    background-color: #1A89DE;
-}
-
-#onzieme-bloc {
-    background-color: #F5F5F5;
-}
-
-#onzieme-lien {
-    background-color: #999999;
-}
-
-#onzieme-lien:hover {
-    background-color: #1C1C1C;
-}
-
-

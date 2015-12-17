@@ -1,0 +1,61 @@
+/* style des blocks */
+
+.block-style1 {
+    background-color: #F5F5F5; 
+}
+
+    .block__lien-style1 {
+        background-color: #999999;
+        
+        color: #FFF;    
+    }
+
+.block-style2 {
+    background-color: #FA8A7E; 
+}
+
+    .block__lien-style2 {
+        background-color: #F8504D;
+        
+        color: #FFF;    
+    }
+
+.block-style3 {
+    background-color: #B382FF; 
+}
+
+    .block__lien-style3 {
+        background-color: #7F53C6;
+        
+        color: #FFF;    
+    }
+
+.block-style4 {
+    background-color: #B7F6C9; 
+}
+
+    .block__lien-style4 {
+        background-color: #35EAB5;
+        
+        color: #000;    
+    }
+
+.block-style5 {
+    background-color: #FBFF86; 
+}
+
+    .block__lien-style5 {
+        background-color: #FBED1A;;
+        
+        color: #000;    
+    }
+
+.block-style6 {
+    background-color: #7EFFFF; 
+}
+
+    .block__lien-style6 {
+        background-color: #3EA8F6;
+        
+        color: #FFF;    
+    }
