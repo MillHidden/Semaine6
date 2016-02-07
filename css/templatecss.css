@@ -53,16 +53,16 @@ header p {
 
 
 /* bloc principal */
+
 .container-style {
-    border: 3px solid #363635;
+    border-top: 4px solid #363635;
+    border-bottom: 4px solid #363635;
 }
 
 /* structure commune d'un block */
 
 .block {
     position: relative;
-    
-    border: 3px solid #363635;
 }
 
 /* structure de l'image */

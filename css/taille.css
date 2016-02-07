@@ -10,7 +10,18 @@
         height: 50px;
         line-height: 50px;
     }
+    
+.block {
+    border: 4px solid #363635;
+}
 
+.bloc-xs-left {
+    border-left: 0;
+}
+
+.bloc-xs-right {
+    border-right: 0;
+}
 
 .block-taille1 {
     height: 100px;
@@ -58,6 +69,14 @@
             height: 100px;
             line-height: 100px;
         }
+        
+    .block-sm-middle {
+        border: 4px solid #363635;
+    }
+    
+    .block-sm-right {
+        border-right: 0px;
+    }
     
     .block-taille1 {
         height: 400px;
@@ -107,6 +126,11 @@
             line-height: 150px;
         }
         
+    .block-md-left {
+        border-left: 0px;
+    }
+    
+    
     .block-taille1 {
         height: 250px;
     }
@@ -145,6 +169,10 @@
 
 
 @media (min-width: 1200px) {
+    
+    .block-lg-middle {
+        border: 4px solid #363635;
+    }
     
     .block-taille1 {
         height: 520px;
